@@ -1,7 +1,7 @@
 import React, {  useState } from 'react'
 
 import { NavLink, useNavigate } from 'react-router'
-import GoogleLogoSvg from '../Components/GoogleLogoSvg';
+import GoogleLogoSvg from '../Components/Icons/GoogleLogoSvg';
 import { PageNames } from '../Constants';
 
 

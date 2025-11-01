@@ -1,6 +1,6 @@
 import React, {  useState } from 'react'
 import { NavLink } from 'react-router';
-import GoogleLogoSvg from '../Components/GoogleLogoSvg';
+import GoogleLogoSvg from '../Components/Icons/GoogleLogoSvg';
 
 function SignupScreen() {
     const [formData,setFormData] = useState({
