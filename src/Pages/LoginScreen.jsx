@@ -1,14 +1,19 @@
-import React, { useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 
-import { NavLink } from 'react-router'
-import { useNavigate } from 'react-router';
-import GoogleLogoSvg from '../Components/GoogleLogoSvg';
+import { NavLink, useNavigate } from 'react-router'
+import GoogleLogoSvg from '../Components/Icons/GoogleLogoSvg';
+import { PageNames } from '../Constants';
 
 
 
 function LoginScreen() {
-    const navigate = useNavigate();
     const [showPassword, setShowPassword] = useState(false)
+    const navigate = useNavigate()
+
+    const handleOnSubmit = (e)=>{
+        e.preventDefault()
+        navigate(PageNames.mainPage)
+    }
 
     return (
         <div>
@@ -16,7 +21,7 @@ function LoginScreen() {
             <div className="flex items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-800">
                 <div className="bg-white p-8 rounded-lg shadow-md w-96 dark:bg-gray-900">
                     <h2 className="text-2xl font-bold mb-6 text-center text-blue-500">Login</h2>
-                    <form >
+                    <form onSubmit={handleOnSubmit}>
                         <div className="flex flex-row items-center mb-4">
                             <input
                                 type="email"
@@ -76,7 +81,7 @@ function LoginScreen() {
                             border-blue-200 rounded-2xl
                             cursor-pointer'
                     >
-                        Continue with Google
+                        Continue with Twitter
                         <GoogleLogoSvg className='w-6 h-6'
                         />
                     </button>
