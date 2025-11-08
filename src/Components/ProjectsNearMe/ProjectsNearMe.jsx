@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectTile from './ProjectTile'
+import { PageNames } from '../../Constants'
 
 const ProjectsNearMe = () => {
   return (
@@ -7,7 +8,7 @@ const ProjectsNearMe = () => {
         <h1 className='text-center xl:text-4xl sm:text-2xl '>Projects Near me</h1>
         <div className='flex flex-row flex-wrap gap-10 justify-center mt-8 transition-all ease-in duration-200' >
 
-        <ProjectTile/>
+        <ProjectTile LinkTo={`${PageNames.project}/${123}`}/>
         <ProjectTile/>
         <ProjectTile/>
         <ProjectTile/>
