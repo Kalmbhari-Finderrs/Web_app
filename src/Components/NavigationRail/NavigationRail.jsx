@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useReducer, useState } from 'react'
+import React, { useLayoutEffect, useReducer } from 'react'
 import Menu from '../Icons/Menu'
 import NavigationButtons from './NavigationButtons'
 import Worker from '../Icons/Worker'
