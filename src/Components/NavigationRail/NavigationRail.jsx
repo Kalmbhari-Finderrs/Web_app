@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useReducer, useState } from 'react'
+import React, { useLayoutEffect, useReducer } from 'react'
 import Menu from '../Icons/Menu'
 import NavigationButtons from './NavigationButtons'
 import Worker from '../Icons/Worker'
@@ -47,7 +47,7 @@ const NavigationRail = () => {
             className={`${railState === railStates.expanded ? 'w-80' : 'w-20'} z-10 transition-all ease-in-out duration-500`}>
             <div
                 className={`bg-blue-100 h-dvh rounded-2xl rounded-s-none
-                ${railState === railStates.expanded ? 'w-80' : railState === railStates.hover ? 'absolute w-80' : 'w-20'} 
+                ${railState === railStates.expanded ? 'w-80' : railState === railStates.hover ? ' w-80' : 'w-20'} 
                 transition-all ease-in-out duration-500`}
             >
                 <div className='flex flex-col justify-center content-between h-dvh'>

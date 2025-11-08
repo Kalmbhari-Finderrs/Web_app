@@ -1,5 +1,8 @@
 export const PageNames ={
+    baseName:'/',
     login:'/login',
     signup:'/signup',
-    mainPage:'/main-page'
+    mainPage:'/main-page',
+    project:'/project',
+    worker:'/worker'
 }
