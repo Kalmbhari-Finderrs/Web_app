@@ -15,6 +15,7 @@ function App() {
       <Route path='/signup' element ={<SignupScreen/>}/>
       <Route path={PageNames.mainPage} element = {<MainPage/>}/>
       <Route path={`${PageNames.project}/:id`} element = {<Information/>}/>
+      <Route path={`${PageNames.worker}/:id`} element = {<Information/>}/>
     </Routes>
     </BrowserRouter>
   )

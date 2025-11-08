@@ -7,10 +7,12 @@ const Information = () => {
     const {id} = useParams()
   return (
     <div className='w-full flex xl:flex-row lg:flex-row md:flex-row sm:flex-col flex-col'>
-        <ProjectImages className={`flex-1/4 bg-blue-50 h-svh`}/>
+        <ProjectImages className={`flex-1/3 h-svh`}
+          id={id}
+        />
         <ProjectInfo 
-        className={`flex-3/4 bg-red-200 h-svh`}
-        id={id}
+        className={`flex-2/3 h-svh`}
+        information={{title:'Project some',id:id,points:["abc","def"]}}
         />
     </div>
   )

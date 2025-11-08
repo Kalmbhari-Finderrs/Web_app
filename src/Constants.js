@@ -3,5 +3,6 @@ export const PageNames ={
     login:'/login',
     signup:'/signup',
     mainPage:'/main-page',
-    project:'/project'
+    project:'/project',
+    worker:'/worker'
 }
